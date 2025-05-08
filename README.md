@@ -1,7 +1,11 @@
 # MyNotesMyReferences
-This Repository is purely to capture my notes to refresh concepts and ideas
+This Repository is purely to capture my notes to refresh concepts and ideas. Contains following content:
 
+- *Storage Variables*
+- *Functions: //Keywords meaning: 'pure', 'view', 'payable' |||| 'private', 'internal', 'public', 'external' *
+- *Memory Storage and Call Data*
 
+  
 ------------------------------------------------------------------------------
 **Storage Variables**
 
@@ -50,5 +54,23 @@ contract Example {
     }
 
 }
+
+------------------------------------------------------------------------------
+
+**Memory Storage and Call Data**
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/29a9138f-2a6a-4b8b-b982-3e636426cba6" />
+
+Important Calls: REMEMBER
+
+Calldata: Temporary variables that cannot be modified
+
+Memory: Temporary variables that can be modified
+
+Storage: Permanent variables that can be modified
+
+<img width="878" alt="image" src="https://github.com/user-attachments/assets/a75bc995-de69-4d3f-bed8-cbc482a858fe" />
+
+
 
 ------------------------------------------------------------------------------
