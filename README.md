@@ -2,8 +2,10 @@
 This Repository is purely to capture my notes to refresh concepts and ideas. Contains following content:
 
 - *Storage Variables*
-- *Functions: //Keywords meaning: 'pure', 'view', 'payable' |||| 'private', 'internal', 'public', 'external' *
+- *Functions: //Keywords: 'pure', 'view', 'payable' |||| 'private', 'internal', 'public', 'external'*
 - *Memory Storage and Call Data*
+- *Override Functions: //Keywords: Virtual, Override*
+- *Transactions - 'msg.value Transfers*
 
   
 ------------------------------------------------------------------------------
@@ -23,7 +25,6 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 **FUNctions 🕺** //Keywords meaning: 'pure', 'view', 'payable' |||| 'private', 'internal', 'public', 'external' 
 
 contract Example {
-
     function example1() private pure {
   
           // private: call me within this contract
@@ -47,6 +48,7 @@ contract Example {
   
     }
   
+
     function example4() external {
     
         // external: call me from outside this contract
@@ -72,5 +74,20 @@ Storage: Permanent variables that can be modified
 <img width="878" alt="image" src="https://github.com/user-attachments/assets/a75bc995-de69-4d3f-bed8-cbc482a858fe" />
 
 
+
+------------------------------------------------------------------------------
+
+**Override Functions: //Keywords: Virtual, Override**
+
+- Virtual: Any function in base/parent contract which needs to be overridden has to be specified as 'virtual' in its definition
+- Override: Any function in inherited/child contract that needs to be overide its functionality, needs to be specified as 'override' in its definition
+
+
+
+------------------------------------------------------------------------------
+
+**Transactions - 'msg.value' Transfers**
+
+<img width="791" alt="image" src="https://github.com/user-attachments/assets/cbfa5362-c4da-437e-8d3d-f56069c42936" />
 
 ------------------------------------------------------------------------------
