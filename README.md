@@ -6,6 +6,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - *Memory Storage and Call Data*
 - *Override Functions: //Keywords: Virtual, Override*
 - *Transactions - 'msg.value Transfers*
+- *Keywords- For Gas Efficiency*
 
   
 ------------------------------------------------------------------------------
@@ -91,3 +92,23 @@ Storage: Permanent variables that can be modified
 <img width="791" alt="image" src="https://github.com/user-attachments/assets/cbfa5362-c4da-437e-8d3d-f56069c42936" />
 
 ------------------------------------------------------------------------------
+
+**Keywords- For Gas Efficiency**
+
+- The **'immutable'** keyword allows values to be set at runtime, while the **'constant'** keyword requires values to be set at compile time.
+        - Constant: CONSTANT_VARIABLENAME
+        - Immutable: i_variablename
+- Revert (replacing 'require'): error CODENAME
+- Modifier: If condition no met, revert before proceeding
+        - Valid way to add Modifier to a function is: _function myFunction() public onlyAdmin { ... }_
+- Special Functions:
+        -  receive:--> receive() external payable {}
+        -  fallback:--> receive() external payable {}
+    -  NOTE:
+        - The receive function is specifically designed to handle Ether transfers without data and is automatically invoked when Ether.
+        - The fallback function is used for handling calls with data or when the receive   function is not defined. The fallback function can also handle Ether transfers with data._
+
+
+  
+------------------------------------------------------------------------------
+
