@@ -7,6 +7,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - *Override Functions: //Keywords: Virtual, Override*
 - *Transactions - 'msg.value Transfers*
 - *Keywords- For Gas Efficiency*
+- _Foundry Keywords/Commands_
 
   
 ------------------------------------------------------------------------------
@@ -110,5 +111,26 @@ Storage: Permanent variables that can be modified
 
 
   
+------------------------------------------------------------------------------
+
+**Foundry - Keywords and Commands**
+
+- Commands
+  - #foundryup //To check if foundry is installed properly and file path is set for working with the programs
+  - #forge --version || #cast --version || #anvil --version || #chisel --version //Check the current version of forge
+  - #forge --help //To get the list of action commands along with the description
+  - #forge fmt // Formats the solidity code in VSCode editor 
+
+  - #anvil // Local virtual Blockchain environment
+  - #forge create NameOfContract --rpc-url --intercive // To deploy a contract into anvil (virtuel test blockchain environment) by using the fake address and private key or to any test or main net as well
+  - #forge script script/DeployContractName.sol or #forge script script/DeployContractName.sol --rpc-url http://URL // Deploys Contract to either local temporary anvil or on the specified RPC/Blockchain network
+
+  - #cast wallet import defaultkey --interactive // Using Keystore file for not exposing the private key text format in vscode or in .env file or in github repo or in any other format..
+      #Enter Private Key:
+      #Enter password:
+  - #cast wallet list //Lists all those defaultkeys which are encrypted for security (as with above command)
+
+
+
 ------------------------------------------------------------------------------
 
