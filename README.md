@@ -117,13 +117,24 @@ Storage: Permanent variables that can be modified
 
 - Commands
   - #foundryup //To check if foundry is installed properly and file path is set for working with the programs
+  - #foundryup-zksync //Similar to abobe but specifically needed for running command for ZKSync chain
+ 
+    
   - #forge --version || #cast --version || #anvil --version || #chisel --version //Check the current version of forge
   - #forge --help //To get the list of action commands along with the description
+  - #forge init or #forge init --force //Foundry initializes the new project directory with standard Foundry structure i.e. core folders (`src`, `test`, `script`) and the default example contract
+  - #forge install path or github url //Is the command we are using to install one or multiple dependencies (e.g. forge install smartcontractkit/chainlink-brownie-contracts@1.3.0 --no-commit)
+  - #forge compile or #forge build // To compile/build the solidity files
+  - #forge test // Runs all test suits and logs details of what is tested, how the results are displayed, where is the test conducted and many more!
+  - #forge script script/DeployContractName.sol or #forge script script/DeployContractName.sol --rpc-url http://URL // Deploys Contract to either local temporary anvil or on the specified RPC/Blockchain network
+  - forge coverage --fork-url $SEPOLIA_RPC_URL // This command displays which parts of your code are covered by tests
+  - #forge create NameOfContract --rpc-url --intercive // To deploy a contract into anvil (virtuel test blockchain environment) by using the fake address and private key or to any test or main net as well
   - #forge fmt // Formats the solidity code in VSCode editor 
 
+
   - #anvil // Local virtual Blockchain environment
-  - #forge create NameOfContract --rpc-url --intercive // To deploy a contract into anvil (virtuel test blockchain environment) by using the fake address and private key or to any test or main net as well
-  - #forge script script/DeployContractName.sol or #forge script script/DeployContractName.sol --rpc-url http://URL // Deploys Contract to either local temporary anvil or on the specified RPC/Blockchain network
+
+
 
   - #cast wallet import defaultkey --interactive // Using Keystore file for not exposing the private key text format in vscode or in .env file or in github repo or in any other format..
       #Enter Private Key:
