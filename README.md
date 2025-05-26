@@ -8,6 +8,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - *Transactions - 'msg.value Transfers*
 - *Keywords- For Gas Efficiency*
 - _Foundry Keywords/Commands_
+- _Best Practices for Deploy scriptrs and Unit/Integrations Tests_
 
   
 ------------------------------------------------------------------------------
@@ -144,4 +145,20 @@ Storage: Permanent variables that can be modified
 
 
 ------------------------------------------------------------------------------
+
+
+**Best Practices for Unit/Integrations Tests and Deploy scripts**
+
+1) Write deploy scripts
+    a) Note, this will not work on zksync  
+2) Write Tests
+    a) Local Chain
+    b) Forked testnet
+    c) Forked mainnet
+     
+
+
+
+------------------------------------------------------------------------------
+
 
