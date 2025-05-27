@@ -8,7 +8,9 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - *Transactions - 'msg.value Transfers*
 - *Keywords- For Gas Efficiency*
 - _Foundry Keywords/Commands_
-- _Best Practices for Deploy scriptrs and Unit/Integrations Tests_
+- _Best Practices for Deploy scripts and Unit/Integrations Tests_
+- _Code Layout for Solidity_
+- _Events_
 
   
 ------------------------------------------------------------------------------
@@ -157,8 +159,43 @@ Storage: Permanent variables that can be modified
     c) Forked mainnet
      
 
+------------------------------------------------------------------------------
 
+**Code Layout for Solidity**
+
+// Layout of Contract:
+// License Identfier
+// version (pragma)
+// imports
+// errors
+// interfaces, libraries, contracts
+// Type declarations
+// State variables
+// Events
+// Modifiers
+// Functions
+
+// Layout of Functions:
+// constructor
+// receive function (if exists)
+// fallback function (if exists)
+// external
+// public
+// internal
+// private
+// view & pure functions
 
 ------------------------------------------------------------------------------
 
+**Events**
+
+- Whenever a Storage variable is updated in the contract, It is important to emit the information (i.e. through Events)
+- Why Events are important
+  // 1. Makes migration easier
+  // 2. Makes front-end 'indexing' easier
+  // Emit an event when we update a dynamic array or mapping
+  // Named events with the function name reversed
+  // 
+
+------------------------------------------------------------------------------
 
