@@ -8,13 +8,13 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - *Transactions - 'msg.value Transfers*
 - *Keywords- For Gas Efficiency*
 - _Foundry Keywords/Commands_
-- _Best Practices for Deploy scripts and Unit/Integrations Tests_
+- _Best Practices (for writing Code, Deploy scripts and for Testing)_
 - _Code Layout for Solidity_
 - _Events_
 
   
 ------------------------------------------------------------------------------
-**Storage Variables**
+## **Storage Variables**
 
 - Variables declared in contract scope are storage variables
 - Solidity stores these in contiguous storage slots
@@ -27,7 +27,10 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
     
 ------------------------------------------------------------------------------
 
-**FUNctions 🕺** //Keywords meaning: 'pure', 'view', 'payable' |||| 'private', 'internal', 'public', 'external' 
+## **FUNctions 🕺** 
+
+**//Keywords meaning: 'pure', 'view', 'payable' |||| 'private', 'internal', 'public', 'external'**
+
 
 contract Example {
     function example1() private pure {
@@ -64,9 +67,9 @@ contract Example {
 
 ------------------------------------------------------------------------------
 
-**Memory Storage and Call Data**
+## **Memory Storage and Call Data**
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/29a9138f-2a6a-4b8b-b982-3e636426cba6" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/29a9138f-2a6a-4b8b-b982-3e636426cba6" />
 
 Important Calls: REMEMBER
 
@@ -76,47 +79,52 @@ Memory: Temporary variables that can be modified
 
 Storage: Permanent variables that can be modified
 
-<img width="878" alt="image" src="https://github.com/user-attachments/assets/a75bc995-de69-4d3f-bed8-cbc482a858fe" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/a75bc995-de69-4d3f-bed8-cbc482a858fe" />
 
 
 
 ------------------------------------------------------------------------------
 
-**Override Functions: //Keywords: Virtual, Override**
+## **Override Functions: //Keywords: Virtual, Override**
 
-- Virtual: Any function in base/parent contract which needs to be overridden has to be specified as 'virtual' in its definition
-- Override: Any function in inherited/child contract that needs to be overide its functionality, needs to be specified as 'override' in its definition
+- **Virtual**: Any function in base/parent contract which needs to be overridden has to be specified as 'virtual' in its definition
+- **Override**: Any function in inherited/child contract that needs to be overide its functionality, needs to be specified as 'override' in its definition
 
 
-
-------------------------------------------------------------------------------
-
-**Transactions - 'msg.value' Transfers**
-
-<img width="791" alt="image" src="https://github.com/user-attachments/assets/cbfa5362-c4da-437e-8d3d-f56069c42936" />
 
 ------------------------------------------------------------------------------
 
-**Keywords- For Gas Efficiency**
+## **Transactions - 'msg.value' Transfers**
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/cbfa5362-c4da-437e-8d3d-f56069c42936" />
+
+------------------------------------------------------------------------------
+
+## **Keywords- For Gas Efficiency**
 
 - The **'immutable'** keyword allows values to be set at runtime, while the **'constant'** keyword requires values to be set at compile time.
         - Constant: CONSTANT_VARIABLENAME
         - Immutable: i_variablename
-- Revert (replacing 'require'): error CODENAME
-- Modifier: If condition no met, revert before proceeding
+- **Revert** (replacing 'require'): error CODENAME
+
+- **Modifier**: If condition no met, revert before proceeding
         - Valid way to add Modifier to a function is: _function myFunction() public onlyAdmin { ... }_
+  
 - Special Functions:
-        -  receive:--> receive() external payable {}
-        -  fallback:--> receive() external payable {}
+
+        -  **receive**:--> receive() external payable {}
+
+        -  **fallback**:--> receive() external payable {}
+  
     -  NOTE:
         - The receive function is specifically designed to handle Ether transfers without data and is automatically invoked when Ether.
-        - The fallback function is used for handling calls with data or when the receive   function is not defined. The fallback function can also handle Ether transfers with data._
+        - The fallback function is used for handling calls with data or when the receive   function is not defined. The fallback function can also handle Ether transfers with data.
 
 
   
 ------------------------------------------------------------------------------
 
-**Foundry - Keywords and Commands**
+## **Foundry - Keywords and Commands**
 
 - Commands
   - #foundryup //To check if foundry is installed properly and file path is set for working with the programs
@@ -149,19 +157,33 @@ Storage: Permanent variables that can be modified
 ------------------------------------------------------------------------------
 
 
-**Best Practices for Unit/Integrations Tests and Deploy scripts**
+## **Best Practices for (for writing Code, Deploy scripts and for Testing)**
 
-1) Write deploy scripts
-    a) Note, this will not work on zksync  
-2) Write Tests
-    a) Local Chain
-    b) Forked testnet
-    c) Forked mainnet
+1) Writing Code
+
+    a) **Checks, Effects, Interactions (CEI) Pattern** - To structure Solidity functions for improved security and gas efficiency.
+       - Checks: Check condition if need to proceed further in the function i.e. next steps or revert if required
+       - Efefcts: Internal Contract State changes
+       - Interactions: External Contract Interactions
+   
+    b) More importantly, this is the recommended sequence for structuring operations within a Solidity function to **prevent reentrancy (security atatcks)**
+
+2) Write deploy scripts
+    a) ////__Note, this will not work on zksync  
+
+3) Write Tests
+    a) Local Chain (Unit/Integrations Tests)
+    b) Forked (using Alchemy API node as e.g. )  
+    c) staging <- run tests on a mainnet or testnet
+    d) Fuzz tests
+       //fuzzing
+       //statefull fuzz
+       //stateless fuzz
+       //formal verification
      
-
 ------------------------------------------------------------------------------
 
-**Code Layout for Solidity**
+## **Code Layout for Solidity**
 
 // Layout of Contract:
 // License Identfier
@@ -187,7 +209,7 @@ Storage: Permanent variables that can be modified
 
 ------------------------------------------------------------------------------
 
-**Events**
+## **Events**
 
 - Whenever a Storage variable is updated in the contract, It is important to emit the information (i.e. through Events)
 - Why Events are important
