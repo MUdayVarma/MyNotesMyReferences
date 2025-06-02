@@ -11,6 +11,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - _Best Practices (for writing Code, Deploy scripts and for Testing)_
 - _Code Layout for Solidity_
 - _Events_
+- _Cyfrin - Takeaway from each module_
 
   
 ------------------------------------------------------------------------------
@@ -218,6 +219,20 @@ Storage: Permanent variables that can be modified
   // Emit an event when we update a dynamic array or mapping
   // Named events with the function name reversed
   // 
+
+------------------------------------------------------------------------------
+
+## **Cyfrin - Takeaway from each module**
+
+- Foundry Basic: 
+  - Lottery/Raffle Contract: Data types i.e. enum, error, events; Using Tools i.e. Chainlink VRFs, Chainlink Automation; Fuzz Testing; Helper Configuration scripts
+  - FundMe Contract: Writing deployment scripts and test cases i.e. Scripts to deploy on testnets, Unit/Integration tests, Checking Code Coverage
+  - Simple Storage Contract: Working with Foiundry i.e. understanding forge/cast/anvil/chesil tools and using them in development/deployment/testing, etc.
+
+- Foundry Adv.:
+  - ERC20: Writing ERC contracts
+  - NFTs: Writing NFT contracts using IPFS storgae solutions   
+
 
 ------------------------------------------------------------------------------
 
