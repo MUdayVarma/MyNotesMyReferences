@@ -11,7 +11,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - _Best Practices (for writing Code, Deploy scripts and for Testing)_
 - _Code Layout for Solidity_
 - _Events_
-- _Cyfrin - Takeaway from each module_
+- [_Cyfrin - Takeaway from each module_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#cyfrin---takeaway-from-each-module) 
 
   
 ------------------------------------------------------------------------------
@@ -226,7 +226,7 @@ Storage: Permanent variables that can be modified
 
 - Foundry Basic: 
   - Lottery/Raffle Contract: Data types i.e. enum, error, events; Using Tools i.e. Chainlink VRFs, Chainlink Automation; Fuzz Testing; Helper Configuration scripts
-  - FundMe Contract: Writing deployment scripts and test cases i.e. Scripts to deploy on testnets, Unit/Integration tests, Checking Code Coverage
+  - FundMe Contract: Writing deployment scripts and test cases i.e. Scripts to deploy on testnets, Unit/Integration tests, 'forked' and 'staging' tests Checking Code Coverage
   - Simple Storage Contract: Working with Foiundry i.e. understanding forge/cast/anvil/chesil tools and using them in development/deployment/testing, etc.
 
 - Foundry Adv.:
