@@ -10,8 +10,9 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - _Foundry Keywords/Commands_
 - _Best Practices (for writing Code, Deploy scripts and for Testing)_
 - _Code Layout for Solidity_
-- _Events_
-- [_Cyfrin - Takeaway from each module_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#cyfrin---takeaway-from-each-module) 
+- [_Events_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#events)
+- [_Cyfrin - Takeaway from each module_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#cyfrin---takeaway-from-each-module)
+- [Upgradable Smart Contracts and Proxy pattern]
 
   
 ------------------------------------------------------------------------------
@@ -236,3 +237,21 @@ Storage: Permanent variables that can be modified
 
 ------------------------------------------------------------------------------
 
+## **Upgradable Smart Contracts and Proxy pattern]**
+
+- Proxy pattern is a design pattern that is commonly used to enable smart contract upgrades by directing user interactions to a stable address that delegates execution to a separate, replaceable logic contract.
+
+- Examples:
+
+  - 'call':  Consider Contract P calling a function in Contract L using a specific low-level mechanism. If the `msg.sender` observed *within* the executed code of Contract L is the address of Contract P itself, then the mechanism used is 'call'.
+ 
+  - When Contract A executes a function in Contract B using `delegatecall`, then Contract A's storage is modified using Contract B's logic.
+ 
+  - Behavior of `delegatecall` differ fundamentally from a standard external `call` (i.e. `delegatecall` executes the target contract's code in the caller's context, modifying the caller's storage, while `call` executes in the target's context, modifying the target's storage.)
+ 
+  - A significant potential drawback or risk introduced by implementing upgradability in smart contracts via proxy patterns is Increased centralization risk, as an administrative entity gains the power to arbitrarily change the contract's logic.
+ 
+  - A key consideration when using low-level assembly language like Yul within smart contracts, as is sometimes done in proxy implementations is, It bypasses many Solidity safety checks, increasing the risk of subtle bugs and security vulnerabilities.
+
+
+------------------------------------------------------------------------------
