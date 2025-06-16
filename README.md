@@ -12,7 +12,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - _Code Layout for Solidity_
 - [_Events_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#events)
 - [_Cyfrin - Takeaway from each module_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#cyfrin---takeaway-from-each-module)
-- [Upgradable Smart Contracts and Proxy pattern]
+- [Upgradable Smart Contracts and Proxy pattern](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#upgradable-smart-contracts-and-proxy-pattern) 
 
   
 ------------------------------------------------------------------------------
@@ -164,25 +164,49 @@ Storage: Permanent variables that can be modified
 1) Writing Code
 
     a) **Checks, Effects, Interactions (CEI) Pattern** - To structure Solidity functions for improved security and gas efficiency.
+
        - Checks: Check condition if need to proceed further in the function i.e. next steps or revert if required
+   
        - Efefcts: Internal Contract State changes
+
        - Interactions: External Contract Interactions
    
     b) More importantly, this is the recommended sequence for structuring operations within a Solidity function to **prevent reentrancy (security atatcks)**
 
 2) Write deploy scripts
-    a) ////__Note, this will not work on zksync  
+   
+    ////__Note, this will not work on zksync  
 
 3) Write Tests
+
     a) Local Chain (Unit/Integrations Tests)
+
     b) Forked (using Alchemy API node as e.g. )  
+
     c) staging <- run tests on a mainnet or testnet
-    d) Fuzz tests
+
+    d) Fuzz tests  // Fuzz testing primarily aims to challenge 'Protocol Invariants' aspect of a smart contract
+
        //fuzzing
+
        //statefull fuzz
-       //stateless fuzz
+
+       //stateless fuzz  ---- //Stateful fuzzing retains the contract state between test runs, while stateless fuzzing resets the state.
+
        //formal verification
-     
+
+4) Key Security and Testing practices
+
+     a) Static analysis tools examines source code for potential bugs, vulnerabilities, and style adherence without actually running the program.
+
+     b) Formal Verification primarily relies on mathematical proofs to verify system correctness.
+
+     c) Tools like Slither, Aderyn, and Mythril fall under static analysis category of smart contract security analysis.
+
+     d) Writing targeted automated tests, including fuzz tests is a technique that complements manual code review by systematically verifying functional correctness and uncovering bugs across diverse inputs.
+
+     e) A significant security risk when running software obtained from untrusted sources directly on your primary computer system is that the software might access and compromise sensitive data or system resources.
+
 ------------------------------------------------------------------------------
 
 ## **Code Layout for Solidity**
