@@ -1,18 +1,20 @@
 # MyNotesMyReferences
 This Repository is purely to capture my notes to refresh concepts and ideas. Contains following content:
 
-- *Storage Variables*
-- *Functions: //Keywords: 'pure', 'view', 'payable' |||| 'private', 'internal', 'public', 'external'*
-- *Memory Storage and Call Data*
-- *Override Functions: //Keywords: Virtual, Override*
-- *Transactions - 'msg.value Transfers*
-- *Keywords- For Gas Efficiency*
-- _Foundry Keywords/Commands_
-- _Best Practices (for writing Code, Deploy scripts and for Testing)_
-- _Code Layout for Solidity_
+- [*Storage Variables*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#storage-variables)
+- [*Functions: //Keywords: 'pure', 'view', 'payable' |||| 'private', 'internal', 'public', 'external'*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#functions-)
+- [*Functions: //Keywords within: 'unchecked']
+- [*Memory Storage and Call Data*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#memory-storage-and-call-data) 
+- [*Override Functions: //Keywords: Virtual, Override*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#override-functions-keywords-virtual-override) 
+- [*Transactions - 'msg.value Transfers*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#transactions---msgvalue-transfers) 
+- [*Keywords- For Gas Efficiency*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#keywords--for-gas-efficiency) 
+- [_Foundry Keywords/Commands_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#foundry---keywords-and-commands) 
+- [_Best Practices (for writing Code, Deploy scripts and for Testing)_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#best-practices-for-for-writing-code-deploy-scripts-and-for-testing)
+- [_Code Layout for Solidity_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#code-layout-for-solidity)
 - [_Events_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#events)
 - [_Cyfrin - Takeaway from each module_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#cyfrin---takeaway-from-each-module)
-- [Upgradable Smart Contracts and Proxy pattern](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#upgradable-smart-contracts-and-proxy-pattern) 
+- [Upgradable Smart Contracts and Proxy pattern](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#upgradable-smart-contracts-and-proxy-pattern)
+- [General terms/concepts: //URIs=URLs+URNs]
 
   
 ------------------------------------------------------------------------------
@@ -66,6 +68,17 @@ contract Example {
     }
 
 }
+
+------------------------------------------------------------------------------
+
+## **FUNctions Keywords within** 
+
+- **'unchecked'**: 
+
+- **'abstract'**:
+
+- **'emit'**: 
+
 
 ------------------------------------------------------------------------------
 
@@ -261,7 +274,7 @@ Storage: Permanent variables that can be modified
 
 ------------------------------------------------------------------------------
 
-## **Upgradable Smart Contracts and Proxy pattern]**
+## **Upgradable Smart Contracts and Proxy pattern**
 
 - Proxy pattern is a design pattern that is commonly used to enable smart contract upgrades by directing user interactions to a stable address that delegates execution to a separate, replaceable logic contract.
 
@@ -278,4 +291,21 @@ Storage: Permanent variables that can be modified
   - A key consideration when using low-level assembly language like Yul within smart contracts, as is sometimes done in proxy implementations is, It bypasses many Solidity safety checks, increasing the risk of subtle bugs and security vulnerabilities.
 
 
+------------------------------------------------------------------------------
+
+## General Terms/Concepts : URI/URL/URN , ERC721/ERC20
+
+- **URI:** A Uniform Resource Identifier (URI), formerly Universal Resource Identifier, is a unique sequence of characters that identifies an abstract or physical resource, such as resources on a webpage, mail address, phone number,books, real-world objects such as people and places, concepts. URIs are used to identify anything described using the Resource Description Framework (RDF), for example, concepts that are part of an ontology defined using the Web Ontology Language (OWL).
+
+- **URL:** URIs which provide a means of locating and retrieving information resources on a network (either on the Internet or on another private network, such as a computer filesystem or an Intranet) are Uniform Resource Locators (URLs). Therefore, URLs are a subset of URIs, i.e. every URL is a URI (and not necessarily the other way around).
+
+- **URN:** Other URIs provide only a unique name, without a means of locating or retrieving the resource or information about it; these are Uniform Resource Names (URNs).
+
+**ERC721/ERC20**
+
+- The ownership tracking of an ERC721 (NFT) token typically differ from an ERC20 token i.e. ERC721 maps unique token IDs to owner addresses, while ERC20 maps addresses to token balances.
+
+- The fundamental difference between decentralized file storage networks and blockchain networks regarding their primary function is that 'Storage networks prioritize decentralized data storage and retrieval, while blockchains prioritize maintaining an immutable ledger and state computation'.
+
+- 
 ------------------------------------------------------------------------------
