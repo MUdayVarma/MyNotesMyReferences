@@ -14,7 +14,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - [_Events_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#events)
 - [_Cyfrin - Takeaway from each module_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#cyfrin---takeaway-from-each-module)
 - [Upgradable Smart Contracts and Proxy pattern](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#upgradable-smart-contracts-and-proxy-pattern)
-- [General terms/concepts: //URIs=URLs+URNs]
+- [General terms/concepts: //URIs=URLs+URNs](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#general-termsconcepts--uriurlurn--erc721erc20)
 
   
 ------------------------------------------------------------------------------
@@ -152,7 +152,8 @@ Storage: Permanent variables that can be modified
   - #forge install path or github url //Is the command we are using to install one or multiple dependencies (e.g. forge install smartcontractkit/chainlink-brownie-contracts@1.3.0 --no-commit)
   - #forge compile or #forge build // To compile/build the solidity files
   - #forge test // Runs all test suits and logs details of what is tested, how the results are displayed, where is the test conducted and many more!
-  - #forge script script/DeployContractName.sol or #forge script script/DeployContractName.sol --rpc-url http://URL // Deploys Contract to either local temporary anvil or on the specified RPC/Blockchain network
+  - #forge script script/DeployContractName.s.sol or #forge script script/DeployContractName.s.sol --rpc-url http://URL // Deploys Contract to either local temporary anvil or on the specified RPC/Blockchain network
+  - forge script script/DeployContractName.s.sol:DeployContractName --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast --verify --etherscan-api-key $ETHERSCAN_API_KEY -vvvv
   - forge coverage --fork-url $SEPOLIA_RPC_URL // This command displays which parts of your code are covered by tests
   - #forge create NameOfContract --rpc-url --intercive // To deploy a contract into anvil (virtuel test blockchain environment) by using the fake address and private key or to any test or main net as well
   - #forge fmt // Formats the solidity code in VSCode editor 
@@ -166,6 +167,23 @@ Storage: Permanent variables that can be modified
       #Enter Private Key:
       #Enter password:
   - #cast wallet list //Lists all those defaultkeys which are encrypted for security (as with above command)
+
+  - **FFI:** In Foundry, the 'ffi = true' setting in your foundry.toml file enables the use of Foreign Function Interface (FFI) — which allows your smart contracts or scripts to call external shell commands during testing or scripting. FFI lets you:
+
+      - Fetch dynamic data during tests (e.g., from an API, CLI, or database)
+
+      - Interact with off-chain systems
+
+      - Run custom scripts (e.g., Python, Bash) that return values used in your tests
+
+
+  - **.toml:** A '.toml' file is a configuration file written in the TOML (Tom's Obvious, Minimal Language) format — a human-readable format for specifying key-value pairs, tables, and arrays, often used for tool and project settings. .toml files are commonly used in:
+
+      - Build tools (e.g., foundry.toml in Foundry, Cargo.toml in Rust)
+
+      - Package managers
+
+      - Project configuration in a clean and structured way
 
 
 
