@@ -16,6 +16,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - [Upgradable Smart Contracts and Proxy pattern](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#upgradable-smart-contracts-and-proxy-pattern)
 - [General terms/concepts: //URIs=URLs+URNs](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#general-termsconcepts--uriurlurn--erc721erc20)
 - [Climate-tech || Climate action || Climate change || ==>> Terminologies]()
+- [Tokenized Real-World Assets (RWAs)]()
 
   
 ------------------------------------------------------------------------------
@@ -363,3 +364,55 @@ Storage: Permanent variables that can be modified
  
   - Center for Climate and Energy Solutions (C2ES)
 
+------------------------------------------------------------------------------
+
+## Tokenized Real-World Assets (RWAs)
+Source: https://cll-devrel.gitbook.io/tokenized-rwa-bootcamp-2024 
+
+**Tokenized Real-World Assets (RWAs):** 
+Tokenized real-world assets (RWAs) are blockchain-based digital tokens that represent physical and traditional financial assets, such as cash, commodities, equities, bonds, credit, artwork, and intellectual property. The tokenization of RWAs marks a significant shift in how these assets can be accessed, exchanged, and managed, unlocking an array of new opportunities for both blockchain-powered financial services and a wide variety of non-financial use cases underpinned by cryptography and decentralized consensus.
+
+**Tokenizing Real-World Assets**
+Tokenizing real-world assets involves representing the ownership rights of assets as onchain tokens. In this process, a digital representation of the underlying asset is created, enabling onchain management of the asset’s ownership rights and helping to bridge the gap between physical and digital assets. 
+
+**Types of Tokenized Assets**
+
+Tokenized assets can be classified by three key traits.
+
+**(A) Asset Location:**
+
+  - (a) OnChain Asset: 👈 These wouldn't be considered real-world assets. These digital assets, like ERC-20 tokens and NFTs, exist natively on a blockchain. They are created, stored, and transferred within the blockchain. 
+
+  - (b) OffChain Asset: These real-world assets exist outside a blockchain, like tokenized real estate, stocks, or commodities, but are represented digitally onchain through tokenization. 
+
+**(B) Collateral Location:** 
+
+  - (a) OnChain Collateral: Collateral is stored directly onchain. These could be cryptocurrencies or tokenized assets held in a smart contract as security. 
+
+  - (b) OffChain Collateral: Collateral involves real-world assets held outside the blockchain but linked to onchain tokens. It could be held by a custodian or in a traditional financial institution. 
+
+**(C) Backing Type:**
+
+  - (a) Direct Backing: The tokenized asset directly represents ownership or a claim on the underlying asset. Each token corresponds to a specific portion of a real-world asset. 
+
+  - (b) Indirect Backing, AKA Synthetic: Tokens that derive their value from the underlying asset but don't represent direct ownership, tracking the value of the assets to represent their value. 
+
+**8 Types of Tokenized Assets**
+
+  - Onchain asset, onchain collateral, direct backing; Example: WETH (Wrapped Ethereum)
+
+  - Onchain asset, onchain collateral, indirect backing (synthetic)[ Example: WBTC (Wrapped Bitcoin)
+
+  - Onchain asset, offchain collateral, direct backing; Hypothetical example: A wrapped BTC ETF
+
+  - Onchain asset, offchain collateral, indirect backing (synthetic); Hypothetical example: A wrapped BTC ETF that represents an ETH ETF
+
+  - Offchain asset, onchain collateral, direct backing; Hypothetical example: A stablecoin backed by other stablecoins
+
+  - Offchain asset, onchain collateral, indirect backing (synthetic); Example: DAI 
+
+  - Offchain asset, offchain collateral, direct backing; Example: USDC (USD Coin) 
+
+  - Offchain asset, offchain collateral, indirect backing (synthetic); Example: USDT (Tether) 
+
+------------------------------------------------------------------------------
