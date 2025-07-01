@@ -15,6 +15,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - [_Cyfrin - Takeaway from each module_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#cyfrin---takeaway-from-each-module)
 - [Upgradable Smart Contracts and Proxy pattern](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#upgradable-smart-contracts-and-proxy-pattern)
 - [General terms/concepts: //URIs=URLs+URNs](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#general-termsconcepts--uriurlurn--erc721erc20)
+- [Climate-tech || Climate action || Climate change || ==>> Terminologies]()
 
   
 ------------------------------------------------------------------------------
@@ -327,3 +328,38 @@ Storage: Permanent variables that can be modified
 
 - 
 ------------------------------------------------------------------------------
+
+## Climate-tech || Climate action || Climate change || ==>> Terminologies
+
+- **Climate action frameworks**:
+  
+  - Paris Climate Accord
+ 
+  - Task Force on Climate-Related Financial Disclosures (TCFD)
+ 
+  - Taskforce on Nature-Related Financial Disclosures (TNFD)
+ 
+  - The Montreal Protocol
+ 
+  - The Glasgow Financial Alliance for net Zero, and
+  
+  - The Science-Based Targets Initiative
+ 
+  - Environmental, Social, and Governance (ESG) standards
+ 
+  - Distributed energy resources (DERs)
+ 
+  - Solar Photovoltaics (PV)
+ 
+  - Concentrated solar power (CSP)
+ 
+  - Independent power producers (IPPs)
+ 
+  - Transmission system operators (TSOs)
+ 
+  - Distribution system operators (DSOs)
+ 
+  - International Energy Agency (IEA)
+ 
+  - Center for Climate and Energy Solutions (C2ES)
+
