@@ -3,7 +3,7 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 
 - [*Storage Variables*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#storage-variables)
 - [*Functions: //Keywords: 'pure', 'view', 'payable' |||| 'private', 'internal', 'public', 'external'*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#functions-)
-- [*Functions: //Keywords within: 'unchecked']
+- [_Functions: //Keywords within: 'unchecked' |||| abstract |||| emit_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#functions-keywords-within)
 - [*Memory Storage and Call Data*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#memory-storage-and-call-data) 
 - [*Override Functions: //Keywords: Virtual, Override*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#override-functions-keywords-virtual-override) 
 - [*Transactions - 'msg.value Transfers*](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#transactions---msgvalue-transfers) 
