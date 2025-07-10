@@ -15,8 +15,8 @@ This Repository is purely to capture my notes to refresh concepts and ideas. Con
 - [_Cyfrin - Takeaway from each module_](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#cyfrin---takeaway-from-each-module)
 - [Upgradable Smart Contracts and Proxy pattern](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#upgradable-smart-contracts-and-proxy-pattern)
 - [General terms/concepts: //URIs=URLs+URNs](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#general-termsconcepts--uriurlurn--erc721erc20)
-- [Climate-tech || Climate action || Climate change || ==>> Terminologies]()
-- [Tokenized Real-World Assets (RWAs)]()
+- [Climate-tech || Climate action || Climate change || ==>> Terminologies](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#climate-tech--climate-action--climate-change---terminologies)
+- [Tokenized Real-World Assets (RWAs)](https://github.com/MUdayVarma/MyNotesMyReferences?tab=readme-ov-file#tokenized-real-world-assets-rwas)
 
   
 ------------------------------------------------------------------------------
