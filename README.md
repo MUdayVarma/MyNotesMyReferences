@@ -156,6 +156,18 @@ Storage: Permanent variables that can be modified
   - #forge test // Runs all test suits and logs details of what is tested, how the results are displayed, where is the test conducted and many more!
   - #forge script script/DeployContractName.s.sol or #forge script script/DeployContractName.s.sol --rpc-url http://URL // Deploys Contract to either local temporary anvil or on the specified RPC/Blockchain network
   - forge script script/DeployContractName.s.sol:DeployContractName --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast --verify --etherscan-api-key $ETHERSCAN_API_KEY -vvvv
+  - **With optimization flags to avoid stack too deep**
+
+    forge script script/StackOptimizedDeploy.s.sol \
+    --rpc-url $SEPOLIA_RPC_URL \
+    --private-key $PRIVATE_KEY \
+    --broadcast \
+    --optimize \
+    --optimizer-runs 200 \
+    --via-ir \
+    --verify \
+    --etherscan-api-key $ETHERSCAN_API_KEY \
+    -vvvv
   - forge coverage --fork-url $SEPOLIA_RPC_URL // This command displays which parts of your code are covered by tests
   - #forge create NameOfContract --rpc-url --intercive // To deploy a contract into anvil (virtuel test blockchain environment) by using the fake address and private key or to any test or main net as well
   - #forge fmt // Formats the solidity code in VSCode editor 
