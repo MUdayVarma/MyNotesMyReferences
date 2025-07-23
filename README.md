@@ -168,6 +168,17 @@ Storage: Permanent variables that can be modified
     --verify \
     --etherscan-api-key $ETHERSCAN_API_KEY \
     -vvvv
+
+  -  Enable filesystem access in foundry.toml. Add this to your foundry.toml file:
+
+          [profile.default]
+          fs_permissions = [{ access = "read-write", path = "./" }]
+
+           Or more specifically for just the 'filename' file:
+     
+          [profile.default]
+          fs_permissions = [{ access = "write", path = "filename" }]
+  
   - forge coverage --fork-url $SEPOLIA_RPC_URL // This command displays which parts of your code are covered by tests
   - #forge create NameOfContract --rpc-url --intercive // To deploy a contract into anvil (virtuel test blockchain environment) by using the fake address and private key or to any test or main net as well
   - #forge fmt // Formats the solidity code in VSCode editor 
